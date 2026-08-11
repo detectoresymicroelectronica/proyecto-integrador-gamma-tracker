@@ -26,20 +26,19 @@ El presente proyecto integrador busca avanzar hacia un sistema de mayor resoluci
 ## Estructura del repositorio
 
 ```
-logs/               Cuaderno de laboratorio digital (un archivo por sesión)
+logs/               Cuaderno de laboratorio digital (un archivo por sesión) + criterios/guias/instrucciones
 scripts/
-  ├── adquisicion/  Control de instrumentos (Keithley 2450, PyVISA/SCPI)
-  └── analisis/     Post-procesamiento, comparación y visualización
+  ├── read/         Control de instrumentos y lectura
+  └── analysis/     Post-procesamiento, comparación y visualización
 data/               Datos experimentales organizados por campaña
   └── <campaña>/
       ├── raw/      CSV crudos (inmutables)
-      └── processed/Datos derivados y resúmenes
-figures/            Figuras finales para tesis e informes
+      └── graphs/   Curvas de los resultados
 ```
 
 ## Convenciones
 
-**Datos:** `IV_{modelo}_{numero}_{YYYYMMDD}.csv`  
+**Datos:** `{modelo}_{numero}_{YYYYMMDD}.csv`  
 **Logs:** `#LOG_YYYY-MM-DD.md`  
 **Dispositivos:** `MFC60035_XX` (numeración secuencial por orden de medición)
 
