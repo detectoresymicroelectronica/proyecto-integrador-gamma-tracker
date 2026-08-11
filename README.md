@@ -2,20 +2,25 @@
   <img src="docs/images/banner_gamma_tracker.png" alt="Gamma Tracker" width="100%">
 </p>
 
-# Gamma Tracker — Sonda gamma para cirugía radioguiada
+# Gamma Tracker
+### Sonda gamma para cirugía radioguiada
 
-Sistema de detección de radiación gamma para asistencia en cirugía laparoscópica oncológica, basado en centellador inorgánico acoplado a fotomultiplicador de silicio (SiPM), con electrónica de lectura multicanal e interfaz en tiempo real.
+<p>
+Sistema de detección de radiación gamma para asistencia en cirugía laparoscópica oncológica, basado en <strong>centellador inorgánico + SiPM</strong>, con electrónica de lectura multicanal e interfaz en tiempo real.
+</p>
 
-**PROYECTO INTEGRADOR**
+<hr>
+
+<p>
+<strong>PROYECTO INTEGRADOR</strong><br>
 Ingeniería en Telecomunicaciones · Instituto Balseiro · 2026–2027
+</p>
 
-**Dana E. González**
-
-*Dirección:* José Lipovetzky
-
-*Codirección:* Fabricio Alcalde
-
-
+<p>
+<strong>Autor:</strong> Dana E. González<br>
+<strong>Director:</strong> José Lipovetzky<br>
+<strong>Codirector:</strong> Fabricio Alcalde
+</p>
 
 ---
 
