@@ -6,13 +6,13 @@
 
 Sistema de detección de radiación gamma para asistencia en cirugía laparoscópica oncológica, basado en centellador inorgánico acoplado a fotomultiplicador de silicio (SiPM), con electrónica de lectura multicanal e interfaz en tiempo real.
 
-Proyecto Integrador — Ingeniería en Telecomunicaciones — Instituto Balseiro, 2026  
+**PROYECTO INTEGRADOR**
+Ingeniería en Telecomunicaciones · Instituto Balseiro · 2026–2027
 
-Autor: Dana E. González
+**Dana E. González**
+*Dirección:* José Lipovetzky
+*Codirección:* Fabricio Alcalde
 
-Director: José Lipovetzky
-
-Codirector: Fabricio Alcalde
 
 ---
 
