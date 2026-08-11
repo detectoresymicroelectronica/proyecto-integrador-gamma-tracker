@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/images/banner_gamma_tracker.png" alt="Gamma Tracker" width="100%">
+</p>
+
 # Gamma Tracker — Sonda gamma para cirugía radioguiada
 
 Sistema de detección de radiación gamma para asistencia en cirugía laparoscópica oncológica, basado en centellador inorgánico acoplado a fotomultiplicador de silicio (SiPM), con electrónica de lectura multicanal e interfaz en tiempo real.
