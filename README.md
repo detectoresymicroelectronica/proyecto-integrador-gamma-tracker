@@ -10,8 +10,11 @@ Sistema de detección de radiación gamma para asistencia en cirugía laparoscó
 Ingeniería en Telecomunicaciones · Instituto Balseiro · 2026–2027
 
 **Dana E. González**
+
 *Dirección:* José Lipovetzky
+
 *Codirección:* Fabricio Alcalde
+
 
 
 ---
