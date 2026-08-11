@@ -24,20 +24,24 @@ Ingeniería en Telecomunicaciones · Instituto Balseiro · 2026–2027
 
 ---
 
+Sí. Mantengo **exactamente el contenido**, solamente ajustando el formato para que se vea mejor en GitHub y usando `<br>` donde conviene.
+
 ## Contexto
 
 Este proyecto continúa y extiende el trabajo de la tesis *Gamma Tracker* (Torletti, 2025), que demostró la viabilidad de una sonda gamma portátil basada en centellador + SiPM para localización de tejido tumoral marcado con FDG (TRL 4–5). El dispositivo se encuentra en proceso de patentamiento ante el INPI.
 
 El presente proyecto integrador busca avanzar hacia un sistema de mayor resolución espacial y espectral, abordando cuatro líneas principales:
 
-- **Nuevo fotosensor:** evaluación de SiPMs de mayor área activa y menor tensión de polarización, con capacidad de espectroscopía de altura de pulso para discriminación energética a 511 keV.
-- **Acople óptico:** comparación cuantitativa de técnicas (grasa óptica, adhesivos UV, fibra óptica) para optimizar eficiencia de transferencia de luz y estabilidad mecánica.
-- **Sistema multipixel:** diseño de una matriz de centelladores acoplados a un arreglo de SiPMs con lectura multicanal para mapeo espacial de actividad gamma en tiempo real.
-- **Electrónica e interfaz:** desarrollo de electrónica de adquisición, comunicación inalámbrica y alimentación por baterías, aptas para entorno quirúrgico (objetivo TRL 5–6).
+* **Nuevo fotosensor:** evaluación de SiPMs de mayor área activa y menor tensión de polarización, con capacidad de espectroscopía de altura de pulso para discriminación energética a 511 keV.
+* **Acople óptico:** comparación cuantitativa de técnicas (grasa óptica, adhesivos UV, fibra óptica) para optimizar eficiencia de transferencia de luz y estabilidad mecánica.
+* **Sistema multipixel:** diseño de una matriz de centelladores acoplados a un arreglo de SiPMs con lectura multicanal para mapeo espacial de actividad gamma en tiempo real.
+* **Electrónica e interfaz:** desarrollo de electrónica de adquisición, comunicación inalámbrica y alimentación por baterías, aptas para entorno quirúrgico (objetivo TRL 5–6).
+
+---
 
 ## Estructura del repositorio
 
-```
+```text
 logs/               Cuaderno de laboratorio digital (un archivo por sesión) + criterios/guias/instrucciones
 scripts/
   ├── read/         Control de instrumentos y lectura
@@ -48,28 +52,36 @@ data/               Datos experimentales organizados por campaña
       └── graphs/   Curvas de los resultados
 ```
 
+---
+
 ## Convenciones
 
-**Datos:** `{modelo}_{numero}_{YYYYMMDD}.csv`  
-**Logs:** `#LOG_YYYY-MM-DD.md`  
+**Datos:** `{modelo}_{numero}_{YYYYMMDD}.csv`<br>
+**Logs:** `#LOG_YYYY-MM-DD.md`<br>
 **Dispositivos:** `MFC60035_XX` (numeración secuencial por orden de medición)
+
+---
 
 ## Instrumentación
 
-| Equipo | Modelo | Interfaz |
-|---|---|---|
-| Source Measure Unit | Keithley 2450 | USB / SCPI vía PyVISA |
-| SiPMs bajo prueba | onsemi MicroFC-60035-SMT (C-Series, 6×6 mm) | — |
+| Equipo              | Modelo                                      | Interfaz              |
+| ------------------- | ------------------------------------------- | --------------------- |
+| Source Measure Unit | Keithley 2450                               | USB / SCPI vía PyVISA |
+| SiPMs bajo prueba   | onsemi MicroFC-60035-SMT (C-Series, 6×6 mm) | —                     |
+
+---
 
 ## Dependencias
 
-- Python 3.11+
-- PyVISA + backend pyvisa-py
-- NumPy, Matplotlib, SciPy
+* Python 3.11+
+* PyVISA + backend pyvisa-py
+* NumPy, Matplotlib, SciPy
+
+---
 
 ## Documentación relacionada
 
-- Torletti (2025). *Gamma Tracker: instrumentación para la detección de radiación gamma en cirugía laparoscópica.* Instituto Balseiro.
-- Knoll (2010). *Radiation Detection and Measurement.* 4th ed., Wiley.
-- onsemi. *C-Series SiPM Datasheet* — MicroFC-60035-SMT.
-- Keithley. *Model 2450 SourceMeter SMU — Reference Manual.*
+* Torletti (2025). *Gamma Tracker: instrumentación para la detección de radiación gamma en cirugía laparoscópica.* Instituto Balseiro.
+* Knoll (2010). *Radiation Detection and Measurement.* 4th ed., Wiley.
+* onsemi. *C-Series SiPM Datasheet* — MicroFC-60035-SMT.
+* Keithley. *Model 2450 SourceMeter SMU — Reference Manual.*
