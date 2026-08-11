@@ -24,8 +24,6 @@ Ingeniería en Telecomunicaciones · Instituto Balseiro · 2026–2027
 
 ---
 
-Sí. Mantengo **exactamente el contenido**, solamente ajustando el formato para que se vea mejor en GitHub y usando `<br>` donde conviene.
-
 ## Contexto
 
 Este proyecto continúa y extiende el trabajo de la tesis *Gamma Tracker* (Torletti, 2025), que demostró la viabilidad de una sonda gamma portátil basada en centellador + SiPM para localización de tejido tumoral marcado con FDG (TRL 4–5). El dispositivo se encuentra en proceso de patentamiento ante el INPI.
