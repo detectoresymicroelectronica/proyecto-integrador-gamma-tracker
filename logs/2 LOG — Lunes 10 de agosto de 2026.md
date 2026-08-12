@@ -29,6 +29,9 @@ Se intentó medir un diodo supuestamente zener de 21–24 V (cilindro DO-41, mar
 | Inversa, 0–35 V | I ~ 10 nA, saturando, sin breakdown | V_br > 35 V |
 | Inversa, 0–100 V | I satura en ~12 nA a ~40 V, plana hasta 100 V | Rectificador, no zener |
 
+![Medición](../docs/images/logs/IV_Rectificador_1E8C_dir_10-08-26.png)
+![Medición](../docs/images/logs/IV_Rectificador_1E8C_inv_10-08-26.png)
+
 **Conclusión:** el componente "1E8C" es un **diodo rectificador**, no un zener. La corriente inversa de saturación (~12 nA) y la ausencia de breakdown hasta 100 V son consistentes con un rectificador tipo 1N400x. Se confirmó con Fabri que, efectivamente, era un rectificador.
 
 **Valor de la sesión:** a pesar de no ser el componente esperado, se validó que el setup mide correctamente corrientes desde pA hasta mA (rango de ~10 décadas), que los scripts funcionan correctamente, y que el procedimiento de medición es sólido.
@@ -46,6 +49,8 @@ Se implementó un barrido en 3 fases usando voltajes negativos para directa y po
 | Fino directa | −0.8 → 0 V | 10 mV | Exponencial de diodo, compliance 50 mA a ~−0.67 V |
 | Grueso medio | 1 → 8 V | 1 V | Corriente de fuga ~nA |
 | Fino inversa | 8 → 15 V | 20 mV | Breakdown abrupto a ~11.8 V, compliance 50 mA alcanzado |
+
+![Medición](../docs/images/logs/IV_Zener_1N4742_10-08-26.png)
 
 **Conexión:** cátodo (banda) → HI (+), ánodo → LO (−). Con esta convención, V < 0 polariza en directa y V > 0 en inversa.
 
@@ -72,6 +77,8 @@ Se implementó un barrido en 3 fases usando voltajes negativos para directa y po
 **Resultados:**
 
 > [!IMPORTANT] > Los archivos de estas mediciones se encuentran en: data/SiPM/raw/MFC60035/10-08-2026
+
+![Medición](../docs/images/logs/comparacion_IV_lineal_batch1_10-08-26.png)
  
 | Dispositivo | V_br [V] | R² del ajuste |
 |---|---|---|
