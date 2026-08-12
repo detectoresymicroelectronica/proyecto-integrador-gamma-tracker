@@ -3,6 +3,8 @@
 
 Evaluar el efecto de NPLC en la calidad de las mediciones I-V, caracterizar el segundo batch de 5 SiPMs (MFC60035_06 a _10), re-medir el primer batch para verificar si la diferencia de medias entre batches observada es térmica o de lote, y analizar la dispersión global de V_br sobre los 10 dispositivos.
 
+![Medición](../docs/images/logs/setup_11-08-26.jpeg)
+
 ---
 
 ## Contexto
@@ -25,6 +27,8 @@ Evaluar el efecto de NPLC en la calidad de las mediciones I-V, caracterizar el s
 **Configuración:** idéntica a la campaña (3 fases, compliance 100 µA, delay 50 ms), variando únicamente NPLC. Las 3 corridas se ejecutaron consecutivamente sin mover cables ni abrir la caja, usando el script `iv_nplc_comparison.py`.
 
 **Resultados:**
+
+![Medición](../data/SiPM/graphs/MFC60035/comparacion_NPLC_MFC60035_05.png)
 
 | NPLC | Duración [s] | V_br [V] | Observación |
 |---|---|---|---|
@@ -57,6 +61,8 @@ Evaluar el efecto de NPLC en la calidad de las mediciones I-V, caracterizar el s
 
 > [!IMPORTANT] > Los archivos de estas mediciones se encuentran en: data/SiPM/raw/MFC60035/11-08-2026
 
+![Medición](../docs/images/logs/comparacion_IV_lineal_batch2_11-08-26.png)
+
 | Dispositivo | V_br [V] |
 |---|---|
 | MFC60035_06 | 24.566 |
@@ -81,6 +87,8 @@ Evaluar el efecto de NPLC en la calidad de las mediciones I-V, caracterizar el s
 
 > [!IMPORTANT] > Los archivos de estas mediciones se encuentran en: data/SiPM/raw/MFC60035/11-08-2026
 
+![Medición](../docs/images/logs/comparacion_IV_lineal_batch1_11-08-26.png)
+
 | Dispositivo | V_br ayer [V] | V_br hoy [V] | Δ [mV] |
 |---|---|---|---|
 | MFC60035_01 | 24.646 | 24.687 | +41 |
@@ -99,13 +107,15 @@ Evaluar el efecto de NPLC en la calidad de las mediciones I-V, caracterizar el s
 
 **Observaciones:**
 - La media del batch 1 se corrió ligeramente (+22 mV) respecto a ayer. Los dispositivos #01, #02 y #03 se movieron más que #04 y #05, consistente con un efecto de orden de medición ayer (los primeros dispositivos se midieron con el setup menos estabilizado).
-- La σ intra-batch bajó de 46.9 mV a 20.1 mV, comparable a la del batch 2 (22.5 mV). Esto indica que la dispersión real dispositivo a dispositivo es ~20 mV y que la medición de ayer tenía una componente de variabilidad extra (probablemente deriva térmica durante la sesión).
+- **La σ intra-batch bajó de 46.9 mV a 20.1 mV**, comparable a la del batch 2 (22.5 mV). Esto indica que la dispersión real dispositivo a dispositivo es ~20 mV y que la medición de ayer tenía una componente de variabilidad extra (probablemente deriva térmica durante la sesión).
 
 ### 4. Comparación global — Resultados consolidados (mediciones de hoy)
 
 
 > [!IMPORTANT] > Las figuras de la ultima comparación (11-08) se encuentran en: data/SiPM/graphs/MFC60035
 > <small> No se incluyo la comparación con el batch1 del 10-08 porque es igual</small>
+
+![Medición](../data/SiPM/graphs/MFC60035/comparacion_IV_lineal_global.png)
 
 | Dispositivo | V_br [V] | Batch |
 | ----------- | -------- | ----- |
@@ -119,6 +129,8 @@ Evaluar el efecto de NPLC en la calidad de las mediciones I-V, caracterizar el s
 | #08         | 24.545   | 2     |
 | #09         | 24.529   | 2     |
 | #10         | 24.531   | 2     |
+
+![Medición](../data/SiPM/graphs/MFC60035/dispersion_Vbr_global.png)
 
 | Estadístico | Batch 1 | Batch 2 | Global |
 |---|---|---|---|
@@ -191,7 +203,7 @@ Todos en la carpeta `datos_iv/`:
 
 - **NPLC = 1 confirmado como óptimo para la campaña.** El ruido post-breakdown es intrínseco al SiPM (fluctuaciones de DCR), no instrumental. NPLC = 5 y 10 no lo reducen y multiplican el tiempo por 2.6× y 4.5× respectivamente.
 - **Re-medición del batch 1 a misma temperatura que batch 2:** permitió confirmar que la diferencia de medias entre batches (~141 mV) es real (efecto de lote de fabricación) y no un artefacto térmico.
-- **La dispersión intra-batch real es ~20 mV** (ambos batches consistentes a σ ≈ 20–22 mV cuando se miden en condiciones controladas). La σ de 46.9 mV del batch 1 medida ayer estaba inflada por variabilidad térmica? 
+- **La dispersión intra-batch medida es ~20 mV** (ambos batches consistentes a σ ≈ 20–22 mV cuando se miden en condiciones controladas). La σ de 46.9 mV del batch 1 medida ayer estaba inflada por variabilidad térmica? 
 
 ---
 
