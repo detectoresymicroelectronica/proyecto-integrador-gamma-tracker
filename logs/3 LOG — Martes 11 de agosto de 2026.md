@@ -59,7 +59,8 @@ Evaluar el efecto de NPLC en la calidad de las mediciones I-V, caracterizar el s
 
 **Resultados:**
 
-> [!IMPORTANT] > Los archivos de estas mediciones se encuentran en: data/SiPM/raw/MFC60035/11-08-2026
+> [!IMPORTANT]
+> Los archivos de estas mediciones se encuentran en: data/SiPM/raw/MFC60035/11-08-2026
 
 ![Medición](../docs/images/logs/comparacion_IV_lineal_batch2_11-08-26.png)
 
@@ -85,7 +86,8 @@ Evaluar el efecto de NPLC en la calidad de las mediciones I-V, caracterizar el s
 
 **Resultados batch 1 re-medido (hoy, 16 °C):**
 
-> [!IMPORTANT] > Los archivos de estas mediciones se encuentran en: data/SiPM/raw/MFC60035/11-08-2026
+> [!IMPORTANT]
+> Los archivos de estas mediciones se encuentran en: data/SiPM/raw/MFC60035/11-08-2026
 
 ![Medición](../docs/images/logs/comparacion_IV_lineal_batch1_11-08-26.png)
 
@@ -112,7 +114,8 @@ Evaluar el efecto de NPLC en la calidad de las mediciones I-V, caracterizar el s
 ### 4. Comparación global — Resultados consolidados (mediciones de hoy)
 
 
-> [!IMPORTANT] > Las figuras de la ultima comparación (11-08) se encuentran en: data/SiPM/graphs/MFC60035
+> [!IMPORTANT]
+> Las figuras de la ultima comparación (11-08) se encuentran en: data/SiPM/graphs/MFC60035
 > <small> No se incluyo la comparación con el batch1 del 10-08 porque es igual</small>
 
 ![Medición](../data/SiPM/graphs/MFC60035/comparacion_IV_lineal_global.png)
@@ -164,7 +167,8 @@ Evaluar el efecto de NPLC en la calidad de las mediciones I-V, caracterizar el s
 
 ## Archivos generados
 
-Todos en la carpeta `datos_iv/`:
+> [!IMPORTANT]
+> Todos en la carpeta `data/SiPM/raw/MFC60035`:
 
 **Comparación NPLC:**
 - `IV_MFC60035_05_nplc_comp_NPLC1_*.csv/.png` — corrida NPLC = 1
