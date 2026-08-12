@@ -58,7 +58,7 @@ Se implementó un barrido en 3 fases usando voltajes negativos para directa y po
 
 
 > [!WARNING]
-> Las mediciones de calibración/validación se sistemas no se guardan en el git, solo en drive/ssd.
+> Las mediciones de calibración/validación de sistemas no se guardan en el git, solo en drive/ssd.
 
 
 ### 2bis. Prueba preliminar: respuesta con luz vs oscuridad (MFC60035_01)
