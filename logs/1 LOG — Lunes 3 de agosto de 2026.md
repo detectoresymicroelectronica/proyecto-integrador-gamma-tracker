@@ -87,12 +87,19 @@ Puesta en marcha del setup de medición de curvas I-V para caracterización de n
 
 - **Resultado:** curva I-V lineal hasta ~35 V donde se alcanza el compliance y se aplana. Comportamiento óhmico verificado correctamente.
 
+![Medición](../docs/images/logs/IV_puesta_en_marcha_03-08-2026.png)
+
 - Gráfico y CSV guardados exitosamente.
 
   
 
 ---
-> [!NOTE] > Acá se puso en marcha el entorno de medición que se usa en todos los scripts que utilizan el Keithley 2450.
+
+> [!NOTE]
+> Con esto se puso en marcha el entorno de medición que se usa en todos los scripts que utilizan el Keithley 2450.
+
+
+
 ## Entorno de ejecución validado
 
 | Componente | Detalle |
