@@ -58,6 +58,25 @@ Se implementó un barrido en 3 fases usando voltajes negativos para directa y po
 
 > [!WARNING] > Las mediciones de calibración/validación se sistemas no se guardan en el git, solo en drive/ssd.
 
+
+### 2bis. Prueba preliminar: respuesta con luz vs oscuridad (MFC60035_01)
+
+Antes de iniciar la campaña de caracterización, se realizaron dos mediciones del dispositivo #01 para verificar el efecto de la luz ambiente en la curva I-V.
+
+| Medición | Archivo | Condición |
+|---|---|---|
+| Sin luz | `IV_MFC60035_01_nolight` | SiPM en la boveda cerrada y tapada de sabanas |
+| Con luz | `IV_MFC60035_01_light` | SiPM en la boveda abierta, expuesta a la luz del laboratorio |
+
+![Medición](../docs/images/logs/MFC60035_01_light_10-08-26.png)
+![Medición](../docs/images/logs/MFC60035_01_nolight_10-08-26.png)
+
+**Resultado esperado:** con luz, la fotocorriente se suma a la corriente oscura, desplazando la curva I-V hacia arriba (mayor corriente a un mismo voltaje). Esto puede sesgar la extracción de V_br si no se controla.
+
+**Conclusión:** la medición confirma la necesidad de medir en oscuridad para obtener valores de V_br reproducibles y comparables entre dispositivos. Todas las mediciones de la campaña (MFC60035_01 a _05) se realizaron con el SiPM cubierto.
+
+
+
 ### 3. Caracterización de SiPMs — Batch 1 (5 dispositivos)
 
 **Dispositivo:** onsemi MICROFC-60035-SMT (C-Series, 6×6 mm, 18980 µcells de 35 µm).
