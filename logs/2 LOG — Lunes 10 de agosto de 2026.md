@@ -56,7 +56,9 @@ Se implementó un barrido en 3 fases usando voltajes negativos para directa y po
 
 **Conclusión:** el setup reproduce correctamente el breakdown de un zener conocido. La curva completa directa + inversa se obtuvo en un solo barrido, validando la capacidad del Keithley 2450 de operar en los 4 cuadrantes.
 
-> [!WARNING] > Las mediciones de calibración/validación se sistemas no se guardan en el git, solo en drive/ssd.
+
+> [!WARNING]
+> Las mediciones de calibración/validación se sistemas no se guardan en el git, solo en drive/ssd.
 
 
 ### 2bis. Prueba preliminar: respuesta con luz vs oscuridad (MFC60035_01)
@@ -95,7 +97,8 @@ Antes de iniciar la campaña de caracterización, se realizaron dos mediciones d
 
 **Resultados:**
 
-> [!IMPORTANT] > Los archivos de estas mediciones se encuentran en: data/SiPM/raw/MFC60035/10-08-2026
+> [!IMPORTANT]
+> Los archivos de estas mediciones se encuentran en: data/SiPM/raw/MFC60035/10-08-2026
 
 ![Medición](../docs/images/logs/comparacion_IV_lineal_batch1_10-08-26.png)
  
@@ -138,7 +141,10 @@ Antes de iniciar la campaña de caracterización, se realizaron dos mediciones d
 | `iv_curve_sipm_complete.py`  | Medición I-V de SiPM (3 fases, extracción automática de V_br)         |
 | `comparar_iv_sipm.py`        | Superposición de curvas de los 5 dispositivos, análisis de dispersión |
 |                              |                                                                       |
-> [!IMPORTANT] >Los scripts relevantes para el PI son: `comparar_iv_sipm.py` y `iv_curve_sipm_complete.py`
+
+> [!IMPORTANT]
+> Los scripts relevantes para el PI son: `comparar_iv_sipm.py` y `iv_curve_sipm_complete.py`
+
 ---
 
 ## Archivos relevantes generados
