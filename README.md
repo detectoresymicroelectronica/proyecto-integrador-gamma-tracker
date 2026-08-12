@@ -50,6 +50,19 @@ data/               Datos experimentales organizados por campaña
       └── graphs/   Curvas de los resultados
 ```
 
+## 📓 Cuaderno de laboratorio
+
+> El directorio `logs/` funciona como **cuaderno de laboratorio digital** del proyecto. Cada archivo registra una sesión de trabajo con objetivo, configuración experimental, observaciones, resultados, decisiones técnicas y pendientes. Tambien se incluyen documentos que sustenten las decisiones experimentales.
+>
+> Los logs priorizan **trazabilidad y reproducibilidad** por sobre presentación. Todo se registra en el cuaderno, preservando el historial completo del razonamiento experimental. 
+>
+> ```
+> logs/
+>  ├── 1 LOG - Lunes 3 de agosto de 2026.md
+>  ├── 2 LOG - Lunes 10 de agosto de 2026.md
+>  └── ...
+> ``
+
 ---
 
 ## Convenciones
