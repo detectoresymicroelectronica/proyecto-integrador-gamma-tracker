@@ -149,8 +149,9 @@ Evaluar el efecto de NPLC en la calidad de las mediciones I-V, caracterizar el s
 - **Inter-batch (lotes distintos):** Δ ~141 mV → variación de V_ov de ~5.6% a V_ov = 2.5 V. Requiere seleccionar dispositivos del mismo lote o implementar compensación individual de bias.
 - **Rango total (N=10):** 190 mV → 7.6% de V_ov.
 
-  > [!IMPORTANT]
-  > ### **La dispersión intra lote es mucho mejor que lo que se venia viendo en los otros fotomultiplicadores.**
+
+> [!IMPORTANT]
+> ### **La dispersión intra lote es mucho mejor que lo que se venia viendo en los otros fotomultiplicadores.**
 
 ---
 
