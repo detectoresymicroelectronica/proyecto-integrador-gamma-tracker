@@ -65,6 +65,29 @@ data/               Datos experimentales organizados por campaña
 
 ---
 
+
+## Progreso del proyecto
+
+### Hitos
+
+-  **Validación de SiPMs MICROFC-60035-SMT** (11/08/2026) — dispersión de V_br intra-lote σ ≈ 20 mV, ~100× menor que el modelo del prototipo anterior. Los 10 dispositivos son aptos para la matriz multipixel. Habilita la primera propuesta del PI.
+
+### Registro semanal
+
+**Semana del 03/08/2026**
+- Setup de medición I-V validado (Keithley 2450 + pyvisa + script Python)
+- Protocolo de conexión y seguridad definido 
+
+**Semana del 10/08/2026**
+- Caracterización I-V de los 10 SiPMs completada 
+- Se confirmó offset de V_br entre lotes (~141 mV) 
+- **→ Hito 1 alcanzado**
+
+**Semana del 17/08/2026** *(próxima)*
+- Armado del circuito de readout para medición de pulsos (pendiente definir diseño con director)
+
+---
+
 ## Convenciones
 
 **Datos:** `{modelo}_{numero}_{YYYYMMDD}.csv`<br>
