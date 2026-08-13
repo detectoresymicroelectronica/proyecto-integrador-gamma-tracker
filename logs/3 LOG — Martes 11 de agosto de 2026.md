@@ -215,6 +215,23 @@ Evaluar el efecto de NPLC en la calidad de las mediciones I-V, caracterizar el s
 
 ---
 
+> [!IMPORTANT]
+> ### 🏁 HITO 1 — Validación experimental de los SiPMs MICROFC-60035-SMT
+>
+> **Fecha:** 11 de agosto de 2026
+>
+> **Resultado:** los 10 dispositivos MICROFC-60035-SMT son aptos para el proyecto. La dispersión de V_br es ~100× menor que la del modelo usado en el prototipo anterior.
+>
+> **Significado:** la baja dispersión intra-batch (~20 mV, equivalente a <1% de V_ov a 2.5 V) viabiliza la polarización compartida en una matriz multipixel sin compensación individual por dispositivo. Incluso mezclando los dos lotes de compra, el rango total de 190 mV es manejable.
+>
+> **Habilita:** continuación con la primera propuesta del Plan de Investigación:
+>
+> *"Evaluación de un nuevo fotomultiplicador de silicio (SiPM) de menor tensión de polarización y mayor área activa (por ejemplo, matriz de 6×6 mm o superior), caracterizando su respuesta espectral, ruido y capacidad para medir la energía de los fotones incidentes. Se obtendrán espectros de altura de pulso que permitan discriminar fotones de 511 keV de aquellos dispersados, mejorando la relación señal-fondo."*
+>
+> **Siguiente paso:** armado del circuito de readout para medición de pulsos (semana del 17/08).
+
+---
+
 ## Pendientes del LOG anterior — estado
 
 - [x] Evaluar efecto de NPLC en la calidad de las mediciones → NPLC no reduce ruido post-breakdown; mantener NPLC = 1
