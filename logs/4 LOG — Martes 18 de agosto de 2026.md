@@ -8,9 +8,11 @@ Familiarizarse con KiCad y diseñar una placa breakout para el SiPM MICROFC-6003
 
 ## Contexto
 
-- Caracterización I-V de los SiPMs en curso (10 dispositivos medidos, ver LOGs anteriores).
-- El director propuso como siguiente paso diseñar una PCB para soldar el SiPM y facilitar las conexiones al instrumental.
-- La placa debe sacar tres señales: cátodo, ánodo y fast output.
+- **HITO 1 alcanzado el 11/08** (ver LOG 3): caracterización I-V completada para los 10 dispositivos MICROFC-60035-SMT (2 batches de 5). Los 10 SiPMs fueron validados como aptos para el proyecto.
+- Dispersión de V_br: σ_intra-batch ~20 mV (<1% de V_ov a 2.5 V), σ_global = 77 mV (dominada por offset inter-batch de ~141 mV entre lotes de fabricación).
+- NPLC = 1 confirmado como óptimo (el ruido post-breakdown es intrínseco al SiPM, no instrumental).
+- El LOG 3 define como siguiente paso: *"armado del circuito de readout para medición de pulsos (semana del 17/08)"*. Esta sesión inicia esa etapa.
+- El director propuso diseñar una PCB breakout para soldar el SiPM y facilitar las conexiones al SMU (bias) y al amplificador RF (fast output).
 - El amplificador RF para la fast output todavía no está definido (modelo pendiente).
 - Se decidió usar esta placa como ejercicio para aprender KiCad desde cero.
 
@@ -204,7 +206,6 @@ La elección de Configuración A **cambia la convención de polaridad** respecto
 ![Placa](../docs/images/logs/placa_esq_v1_18-08-26.jpg)
 ![Placa](../docs/images/logs/placa_3d_v1_18-08-26.jpg)
 
-
 ### Acciones realizadas
 - [x] Modificar `iv_curve_sipm_complete.py` → versión 3.0 (`iv_curve_sipm_complete_v3.py`)
   - Voltajes de barrido negativos para inversa
@@ -217,10 +218,13 @@ La elección de Configuración A **cambia la convención de polaridad** respecto
 
 ---
 
-## Pendientes del LOG anterior — estado
+## Pendientes del LOG anterior (11/08) — estado
 
-- [x] Evaluar efecto de NPLC en la calidad de las mediciones → pendiente
-- [ ] Revisar si el rango del ajuste de √I vs V necesita acotarse → pendiente
+- [ ] Revisar si el rango del ajuste de √I vs V necesita acotarse (excluir cola alta para mejorar R²) → pendiente
+- [ ] Evaluar medición a distintas temperaturas controladas (cuantificar dV_br/dT experimental y comparar con datasheet: 21.5 mV/°C) → pendiente; la medición de deriva térmica propuesta por el director (bonus) podría cubrir esto
+- [ ] Verificar si la deriva de V_br observada en el experimento NPLC (+55 mV en 40 min) se estabiliza después de un warm-up más largo → pendiente
+- [ ] Definir criterio de selección de dispositivos para la matriz (¿mismo lote o compensación individual?) → pendiente
+- [ ] Evaluar corriente oscura a V_ov fijo (ej. V_br + 2.5 V) como indicador de DCR relativo entre dispositivos → pendiente
 
 ---
 
