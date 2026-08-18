@@ -200,6 +200,11 @@ La elección de Configuración A **cambia la convención de polaridad** respecto
 | **J2** | FAST_OUT | Pin 2 (Fast Output) | Entrada amplificador RF |
 | **J3** | CATHODE_GND | Pin 3 (Cathode) | SMU LO (−), GND amplificador RF |
 
+![Placa](../docs/images/logs/placa_v1_18-08-26.jpg)
+![Placa](../docs/images/logs/placa_esq_v1_18-08-26.jpg)
+![Placa](../docs/images/logs/placa_3d_v1_18-08-26.jpg)
+
+
 ### Acciones realizadas
 - [x] Modificar `iv_curve_sipm_complete.py` → versión 3.0 (`iv_curve_sipm_complete_v3.py`)
   - Voltajes de barrido negativos para inversa
@@ -214,12 +219,8 @@ La elección de Configuración A **cambia la convención de polaridad** respecto
 
 ## Pendientes del LOG anterior — estado
 
-- [ ] Evaluar efecto de NPLC en la calidad de las mediciones → pendiente
-- [ ] Caracterizar el segundo batch de 5 SiPMs (MFC60035_06 a _10) → pendiente
-- [ ] Correr script de comparación con los 10 dispositivos → pendiente
-- [ ] Evaluar dispersión global (N=10) vs intra-batch → pendiente
+- [x] Evaluar efecto de NPLC en la calidad de las mediciones → pendiente
 - [ ] Revisar si el rango del ajuste de √I vs V necesita acotarse → pendiente
-- [ ] Documentar temperatura ambiente de cada sesión → pendiente
 
 ---
 
