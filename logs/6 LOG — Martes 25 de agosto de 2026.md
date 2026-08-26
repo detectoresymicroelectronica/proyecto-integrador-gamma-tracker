@@ -91,7 +91,7 @@ Se posicionaron las agujas directamente sobre los pads del SiPM en la PCB, elimi
 **Paso 5 — SiPM desoldado:**
 Se desoldó el SiPM #05 de la PCB y se midió de forma independiente. La curva obtenida (ver figura) muestra que el dispositivo es esencialmente un **circuito abierto**:
 
-![Curva I-V — 05_desoldado — 2026-08-25 17:25](../docs/images/logs/IV_05_desoldado_25-08-26.png)
+![Curva I-V — 05_desoldado — 2026-08-25 17:25](../docs/images/logs/I-V_05_desoldado_25-08-26.jpeg)
 
 - Escala: 10⁻⁹ A.
 - La corriente **oscila alrededor de cero** en todo el rango de 0–30 V: ±0.5 nA pre-23 V, ±1.5 nA post-23 V.
@@ -108,6 +108,8 @@ Se desoldó el SiPM #05 de la PCB y se midió de forma independiente. La curva o
 **Hallazgo adicional:** la corriente óhmica observada en la medición con la plaquita (~12 nA a 24 V) **no pasaba por el SiPM** sino por la PCB misma (camino parásito a través del substrato FR4 o contaminación superficial). Al remover el SiPM y medirlo aislado, la corriente cayó a cero, confirmando que el dispositivo está muerto y que la PCB tiene una fuga parásita propia del orden de ~2 GΩ. Esta fuga de la PCB es irrelevante para la operación normal (12 nA << 611 nA de I_dark esperada), pero es importante tenerla identificada para no confundirla con señal del SiPM en futuros diagnósticos.
 
 **Conclusión del troubleshooting:** el SiPM #05 está destruido. Dos mediciones independientes lo confirman de forma inequívoca: la plaquita muestra solo la fuga parásita de la PCB (sin breakdown), y el SiPM desoldado se comporta como un circuito abierto (corriente = ruido del instrumento).
+
+![Curva I-V — 05_desoldado — 2026-08-25 17:25](../docs/images/logs/SiPM_05_pressF_25-08-26.jpeg)
 
 ### 4. Análisis de causa raíz — Daño térmico por soldadura
 
