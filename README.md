@@ -113,6 +113,16 @@ data/               Datos experimentales organizados por campaña
 
 ---
 
+###  Casualties:
+
+**Componentes destruidos:** `1`  
+**Días sin quemar algo:** `3`
+
+> 🫡 
+
+
+---
+
 ## Documentación relacionada
 
 * Torletti (2025). *Gamma Tracker: instrumentación para la detección de radiación gamma en cirugía laparoscópica.* Instituto Balseiro.
