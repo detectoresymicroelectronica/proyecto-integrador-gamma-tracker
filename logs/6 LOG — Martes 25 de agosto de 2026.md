@@ -109,6 +109,10 @@ Se desoldó el SiPM #05 de la PCB y se midió de forma independiente. La curva o
 
 **Conclusión del troubleshooting:** el SiPM #05 está destruido. Dos mediciones independientes lo confirman de forma inequívoca: la plaquita muestra solo la fuga parásita de la PCB (sin breakdown), y el SiPM desoldado se comporta como un circuito abierto (corriente = ruido del instrumento).
 
+> [!CAUTION]
+> 🫡 **Press F** por el primer componente destruido en el PI.
+>
+
 ![Curva I-V — 05_desoldado — 2026-08-25 17:25](../docs/images/logs/SiPM_05_pressF_25-08-26.jpeg)
 
 ### 4. Análisis de causa raíz — Daño térmico por soldadura
