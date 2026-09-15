@@ -255,9 +255,7 @@ Para futuras sesiones con pulsos, capturar un screenshot del osciloscopio para c
 ## Pendientes del LOG anterior (14/09) — estado
 
 - [x] **Conseguir amplificador para readout del 60035** → **RESUELTO**: placa amplificadora BGA614 ×100 diseñada y fabricada por Lara. Pulsos observados.
-- [ ] Diagnosticar y reparar circuito conmutador MOSFET (IRFZ44N) → pendiente
-- [ ] Probar sistema completo Arduino → MOSFET → Peltier → control PID → pendiente
-- [ ] Armar setup térmico completo y ejecutar Tarea 3 (dV_br/dT) → pendiente
+
 
 ---
 
