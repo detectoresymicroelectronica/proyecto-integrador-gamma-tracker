@@ -20,7 +20,7 @@ Probar el circuito amplificador diseñado por Lara sobre la placa con SiPM #09 s
 
 ### Esquemático
 
-![Esquemático del circuito amplificador](../docs/images/logs/esquematico_amplificador_lara.png)
+![Esquemático del circuito amplificador](../docs/images/logs/esquematico_amplificador_lara.webp)
 
 ### Arquitectura
 
@@ -43,7 +43,7 @@ La placa integra el SiPM y la cadena de amplificación en un solo PCB compacto, 
 
 ### Foto de la placa fabricada
 
-![Foto del circuito amplificador fabricado](../docs/images/logs/foto_placa_amplificadora.jpg)
+![Foto del circuito amplificador fabricado](../docs/images/logs/foto_placa_amplificadora.jpeg)
 
 Placa de ~5×3 cm, cobre visto (sin máscara de soldadura), con dos encapsulados negros (los BGA614), conector SMA en el borde derecho (salida amplificada J6), y conector coaxial en la parte superior (bias J8). Fabricación con router CNC en la CNEA.
 
@@ -69,7 +69,7 @@ Se polarizó el SiPM #09 mediante `bias_sipm_needles.py` y se conectó la salida
 
 **Resultado: se observaron pulsos individuales de dark counts.**
 
-![Captura del osciloscopio — pulso de dark count amplificado](../docs/images/logs/osciloscopio_pulso_sipm.jpg)
+![Captura del osciloscopio — pulso de dark count amplificado](../docs/images/logs/osciloscopio_pulso_sipm.jpeg)
 
 La medición automática del osciloscopio reporta:
 
