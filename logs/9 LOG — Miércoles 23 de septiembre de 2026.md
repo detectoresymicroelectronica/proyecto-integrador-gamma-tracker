@@ -76,7 +76,7 @@ Con tanta incertidumbre no se puede fijar una ganancia sin riesgo de saturar o d
 | C3  | El fotoelectrón individual (SPE) se ve sobre el ruido | SNR ≥ 5                       |
 | C4  | Estable                                               | Sin ringing, undershoot < 5 % |
 
-> [!QUESTION]
+> [!IMPORTANT]
 > Me queda definir cual es el valor de energia mas grande que nos interesa medir. Por ej. varios fotopicos del gamma de 511keV para ver pile up?
 
 **Escenarios** (de menos a más luz):
