@@ -37,7 +37,8 @@ Llegadas de Poisson. Hay pile-up si llega otro gamma dentro del ancho τ:
 | LYSO | 271 ns | 3.0 % | 437 ns | 4.8 % |
 | GSO | 330 ns | 3.6 % | 712 ns | 7.6 % |
 
-![Probabilidad de pile-up vs tasa](pileup_vs_tasa.png)
+![Probabilidad de pile-up vs tasa](../docs/images/logs/pileup_vs_tasa.png)
+
 
 - A 5 cm (1 119 cps), la probabilidad es < 0.1 % en todos los casos.
 - El criterio del 10 % mide si un segundo pulso se distingue. El del 1 % indica cuándo la línea de base ya no altera la amplitud del pulso siguiente.
