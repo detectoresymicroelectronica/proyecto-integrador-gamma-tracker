@@ -39,7 +39,7 @@ La luz del centellador llega repartida en el tiempo y cada avalancha se recupera
 | LYSO | ~52 ns | Q / 149 ns |
 | GSO | ~64 ns | Q / 186 ns |
 
-![Forma del pulso por gamma](forma_pulso_LYSO_GSO.png)
+![Forma del pulso por gamma](../docs/images/logs/forma_pulso_LYSO_GSO.png)
 
 La aproximación triangular de la versión anterior (base de 135 ns) **sobreestima el pico ~2.2×**.
 
