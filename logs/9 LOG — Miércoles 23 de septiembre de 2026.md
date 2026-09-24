@@ -165,9 +165,9 @@ El ruido no depende de V_ov (idéntico a 27 V y 29.5 V). Crece con R_F: ~0.26 mV
 
 ### 6.5 Pulso a 511 keV por escenario
 
-> 📷 **[Imagen 6]** `esc_vov2p5.png` (S1, S2, S4, S5) y `esc_vov5p0.png` (S3).
 
 ![esquematico SiPM](../docs/images/logs/esc_vov2p5.png)
+
 ![esquematico SiPM](../docs/images/logs/esc_vov5p0.png)
 
 Ventana de R_F que cumple C1–C4 (tablas completas en los CSV):
