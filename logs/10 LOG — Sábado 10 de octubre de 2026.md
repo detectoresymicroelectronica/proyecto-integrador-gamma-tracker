@@ -60,7 +60,7 @@ No hay símbolo descargable: SnapEDA no lo tiene. Se creó `ADA4895.kicad_sym` c
 
 Footprint `Package_TO_SOT_SMD:SOT-23-6`, campo LCSC = **C654293**. El pinout físico se verificó con el footprint: pads 1-2-3 de un lado y 6-5-4 del otro, en sentido antihorario.
 
-![Símbolo ADA4895 en el Symbol Editor](../docs/images/logs/simbolo_ADA4895_10-10-26.png)
+![Símbolo ADA4895 en el Symbol Editor](../docs/images/logs/simbolo_ADA4895_10-10-26.png.jpg)
 
 ---
 
@@ -82,7 +82,7 @@ Se organizó en bloques con la misma filosofía que el esquemático de Lara: un 
 
 Etiquetas de red: `+V_BIAS`, `TIA_IN`, `TIA_OUT`, `UREF`, `VOUT`. Los valores "50" se mantienen así en el esquemático; en el BOM se asigna una pieza de 49,9 Ω.
 
-![Esquemático completo con los 7 bloques](../docs/images/logs/esquematico_EVB-TIA_v0_10-10-26.png)
+![Esquemático completo con los 7 bloques](../docs/images/logs/esquematico_EVB-TIA_v0_10-10-26.png.jpg)
 
 ### 3.2 Decisiones y cambios respecto del diseño de Lara
 
@@ -254,7 +254,7 @@ Disposición:
 > [!NOTE]
 > Estas posiciones corresponden al floorplan del 10/10. En el LOG 11 la placa se reordenó y el contorno pasó a (113,2; 53,75) → (146,7; 88,25). Para la versión fabricada, la referencia es el CPL del LOG 12.
 
-![Floorplan compacto (artifact) y placa con los componentes ubicados](../docs/images/logs/floorplan_compacto_EVB-TIA_v0_10-10-26.png)
+![Floorplan compacto (artifact) y placa con los componentes ubicados](../docs/images/logs/floorplan_compacto_EVB-TIA_v0_10-10-26.png.jpg)
 
 ---
 
@@ -290,7 +290,7 @@ Es tensión continua, así que la longitud no importa. La regla es que ningún t
 
 **Problema encontrado:** la tecla V no colocaba la vía. El motivo era que la posición elegida, entre C10 y TIA_OUT, no tenía lugar para la vía (0,6 mm + 0,2 mm de separación por lado), y el router la rechazaba sin avisar. Se resolvió colocándola del otro lado de C10.
 
-![Detalle del cruce de +5V por B.Cu (C9 → C10)](../docs/images/logs/cruce_5V_BCu_10-10-26.png)
+![Detalle del cruce de +5V por B.Cu (C9 → C10)](../docs/images/logs/cruce_5V_BCu_10-10-26.png.jpg)
 
 ---
 
@@ -357,8 +357,8 @@ El lazo completo del pulso (pad 3 → C4, con ~1 nH propio → −IN → masa �
 
 **Conclusión:** lo que importa es tener al menos una vía pegada al pad. La segunda casi seguro no se podría medir.
 
-![Placa completa con zonas rellenas](../docs/images/logs/placa_zonas_GND_10-10-26.png)
-![Detalle del SiPM: pad 1 conectado al relleno y su vía](../docs/images/logs/detalle_SiPM_pad1_10-10-26.png)
+![Placa completa con zonas rellenas](../docs/images/logs/placa_zonas_GND_10-10-26.png.jpg)
+![Detalle del SiPM: pad 1 conectado al relleno y su vía](../docs/images/logs/detalle_SiPM_pad1_10-10-26.png.jpg)
 
 ---
 
@@ -376,7 +376,6 @@ Las 52 advertencias son:
 
 Hay 5 *Ignored Tests* que no se revisaron. La superposición de courtyard entre JP1–JP3, que se esperaba, no apareció como error.
 
-![DRC final](../docs/images/logs/DRC_final_10-10-26.png)
 
 ---
 
