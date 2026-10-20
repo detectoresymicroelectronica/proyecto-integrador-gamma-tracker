@@ -276,7 +276,7 @@ O sea: **1 = ánodo, 2 = cátodo, 3 = común**, el pinout estándar. Coincide co
 
 **Para la v1:** las rotaciones de U2 y D1 difieren entre el 0° de la biblioteca de KiCad y el de la cinta de JLCPCB. Se pueden corregir directamente en el CPL.
 
-![Vista previa de colocación en JLCPCB: U2 y D1 corregidos](../docs/images/logs/jlcpcb_colocacion_U2_D1_20-10-26.png)
+![Vista previa de colocación en JLCPCB: U2 y D1 corregidos](../docs/images/logs/jlcpcb_colocacion_U2_D1_20-10-26.png.jpg)
 
 ---
 
