@@ -30,7 +30,7 @@
 - **Serigrafía:**
   - textos a 0,8 mm y tabla de R_F en un recuadro;
   - logos de MADLAB, IB y CNEA convertidos para la cara de abajo;
-  - recuadro "N°" para numerar las placas y texto `JLCJLCJLCJLC` para el número de pedido.
+
 
 ---
 
@@ -309,10 +309,10 @@ KiCad no exporta la vista del editor tal como se ve (con transparencias y la cap
 - **Vías tapadas:** *Board Setup → Solder Mask/Paste → Tent vias: Front ✓ Back ✓*. Confirmado.
 - **Headers verticales:** en una revisión del render 3D se interpretó que los pines eran en ángulo recto. Era un efecto de la perspectiva: los pines son verticales. No hubo cambios.
 
-![PCB con serigrafía final](../docs/images/logs/placa_serigrafia_final_14-10-26.png)
-![Render 3D, cara de arriba](../docs/images/logs/render3D_top_EVB-TIA_v0_14-10-26.png)
-![Render 3D, cara de abajo](../docs/images/logs/render3D_bottom_EVB-TIA_v0_14-10-26.png)
-![DRC en 0/0/0](../docs/images/logs/DRC_final_14-10-26.png)
+
+![Render 3D, cara de arriba](../docs/images/logs/render3D_top_EVB-TIA_v0_14-10-26.png.jpg)
+![Render 3D, cara de abajo](../docs/images/logs/render3D_bottom_EVB-TIA_v0_14-10-26.png.jpg)
+![DRC en 0/0/0](../docs/images/logs/DRC_final_14-10-26.png.jpg)
 
 ---
 
