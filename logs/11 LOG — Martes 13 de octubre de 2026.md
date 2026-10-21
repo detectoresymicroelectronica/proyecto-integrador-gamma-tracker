@@ -238,8 +238,12 @@ Contorno real (Edge.Cuts): **(113,2; 53,75) → (146,7; 88,25)**, 33,5 × 34,5 m
   - V_br ≈ 24,2–24,7 V a 21 °C (datasheet), sube ~21,5 mV/°C;
   - rango de trabajo 27 V (V_ov ≈ 2,5 V) a 29,5 V (V_ov ≈ 5 V), como en el LOG 9.
 - **Fuente:** con límite de corriente bajo (~1 mA). En oscuridad el SiPM consume µA; con la polaridad invertida queda en directa y conduce mucho.
-- **Orden de encendido:** primero +5 V, después el bias subiéndolo de a poco. Al apagar, al revés.
-  - **Motivo:** el escalón de ~30 V en el cátodo pasa por C4 hacia −IN. D1 lo recorta, pero conviene que el amplificador ya esté alimentado.
+- **Orden de encendido:** primero +5 V; después el bias, **siempre en rampa lenta** y con la fuente limitada en corriente. Al apagar, al revés: primero bajar el bias en rampa y después cortar los +5 V.
+  - **Motivo:** cualquier variación brusca del bias pasa por C4 a −IN (i = C4·dV/dt). **D1 (BAT54S) no protege contra esto:** antes conducen los diodos internos del ADA4895 entre +IN y −IN, que toleran menos de 10 mA (datasheet del ADA4895, p. 16). La protección real es:
+    - el **límite de corriente de la fuente** (~1 mA): la corriente hacia −IN nunca puede superar ese valor;
+    - la **rampa lenta**, que mantiene esa corriente muy por debajo del límite.
+  - Con el amplificador ya alimentado, −IN es una tierra virtual y la corriente de la rampa se va por R_F en lugar de forzar los diodos.
+  - D1 queda como protección contra descargas electrostáticas.
 - **Masas:** J1 y J2 comparten GND en la placa. Usar fuentes flotantes, o unir las masas en un solo punto, para evitar lazos de masa.
 - **Pendiente:** registrar con qué fuente o SMU se hicieron las curvas IV de agosto y usar la misma, para que V_bias sea comparable.
 
